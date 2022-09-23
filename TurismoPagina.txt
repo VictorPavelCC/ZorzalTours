@@ -1,0 +1,31 @@
+Nombre: ZorzalTours
+____
+DESTINOS: 
+-CORDOBA
+-MISIONES
+___
+colores:
+#E8C40C
+#F2B50C
+#DB8A00
+#F2810C
+#E85C0C
+
+___
+paginas:
+index
+quienes somos
+contactanos
+destinos
+promociones
+_________
+imagenes:
+logo
+____
+
+letra
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+
+css:font-family: 'Arvo', serif;
