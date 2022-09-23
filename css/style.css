@@ -6,10 +6,6 @@
     text-decoration: none;
 }
 
-body{
-    background-image: url("../img/fondoceleste.jpg");
-    background-repeat: none;
-}
 
 .titulo {
     font-family: 'Arvo', serif;
@@ -18,4 +14,21 @@ body{
     padding: 12px;
     color: #E85C0C;
     text-shadow: 0.05cm 0.05cm 0.05cm black;
+}
+
+.fondo{
+    background-color: #F6AE0C;
+}
+
+
+
+.menu a{
+    font-family: 'Arvo', serif;
+    color: #E85C0C;
+    font-weight: bold;
+    text-shadow: 0.05cm 0.05cm 0.05cm black;
+}
+
+.menu a:hover{
+    color: #F2B50C;
 }
