@@ -5,3 +5,17 @@
     list-style-type: none;
     text-decoration: none;
 }
+
+body{
+    background-image: url("../img/fondoceleste.jpg");
+    background-repeat: none;
+}
+
+.titulo {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    color: #E85C0C;
+    text-shadow: 0.05cm 0.05cm 0.05cm black;
+}
