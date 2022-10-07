@@ -36,14 +36,14 @@
 
 /*quienes_somos*/
 
-div.frase h3{
-    color: rgb(164, 59, 33);
+.frase h3{
+    color: #a43b21;
     font-size: 20px;
     font-family:'Roboto', sans-serif;
     font-weight:900;
     font-style:italic;
     text-align:center;
-    text-decoration:overline underline;
+    text-decoration:underline;
     text-decoration-color: #f6b00cd2;
     padding: 50px 0px 0px 0px;
 }
@@ -60,7 +60,11 @@ div.frase h3{
     margin: 100px 500px 0px 0px;
 }
 
-div.foto img {
+.team {
+    padding: 30px;
+}
+
+.foto img {
     padding: 20px;
     border-radius: 50px;
     width: 350px;
@@ -69,19 +73,16 @@ div.foto img {
     margin: 0px 10px 0px 350px;
 }
 
-h4, h6 {
-    float: left;
-}
 
-article.info_team p {
+.info_team p {
     font-size: 20px;
 }
 
-article.info_team h4{
+.info_team h4{
     font-size: 32px;
 }
 
-article.info_team h6 {
+.info_team h6 {
     color: rgba(109, 117, 116, 0.808);
     font-size: 15px;
 }
@@ -93,8 +94,29 @@ div.preg_frecuentes h1{
     margin: 10px 0px 10px 30px;
     font-size: 40px;
     font-style: italic;
+    color: #a43b21;
+    text-align: center;
 }
 
 li strong {
     font-size: 18px;
+}
+
+
+/* responsive */
+
+@media (max-width: 767px) {
+    .info_team {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .foto img {
+        margin: 2px;
+    }
+}
+
+
+@media (min-width: 1101px) {
+    
 }
