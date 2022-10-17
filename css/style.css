@@ -7,10 +7,91 @@
     
 }
 
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+
 .home{
     background-color:antiquewhite;
 }
+/* menu */
+.logo{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 20px;
+    padding: 2px;
+    margin-left: 10px;
+}
 
+nav{
+    transition: .4s;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu_boton{
+    padding: 10px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.menu_items{
+    width: 100%;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    text-shadow: 0.05cm 0.05cm 0.05cm black
+}
+.items a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #a43b21;
+    color: white;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+}
+
+.items a:hover{
+    background-color: #F2B50C;
+}
+
+.show{
+    height: 300px;
+    transition: .4s;
+
+}
+
+
+/* fin del menu */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo_footer{
+    display: flex;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    padding: 20px;
+
+}
+
+.redes li{
+    margin: 5px 10px 5px 10px;
+}
+
+/* se termino footer */
 
 .titulo {
     font-family: 'Arvo', serif;
@@ -25,28 +106,14 @@
     background-color: #F6AE0C;
 }
 
-.packsV{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-.packsV li{
-    width: 220px;
-    margin: 15px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-}
-.promo{
-    width: 100%;
-    
-}
+
+
+
 .menu a{
     font-family: 'Arvo', serif;
     color: #E85C0C;
     font-weight: bold;
-    text-shadow: 0.05cm 0.05cm 0.05cm black;
+    text-shadow: 0.05cm 0.05cm 0.05cm black;    
 }
 
 .menu a:hover{
@@ -65,7 +132,7 @@
     text-align:center;
     text-decoration:underline;
     text-decoration-color: #f6b00cd2;
-    padding: 50px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .barra_separadora{
@@ -109,7 +176,6 @@
 }
 
 
-/*preguntas frecuentes*/
 
 div.preg_frecuentes h1{
     margin: 10px 0px 10px 30px;
@@ -120,14 +186,41 @@ div.preg_frecuentes h1{
 }
 
 
+
+.packsV{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.promo{
+    width: 100%;
+
+    
+}
+.packsV li{
+    width: 300px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
 .info {
     font-size: 20px;
     font-family:'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .info p{
     text-align: center;
+    margin: 10px;
 }
 
 .info span{
@@ -142,7 +235,7 @@ li strong {
 .boton{
     text-decoration: none;
     color: #a43b21;
-    margin-left: 20px;
+    margin: 5px 0 0 20px;
     padding: 4px 8px 4px 8px;
     border-radius: 18px;
     border: 1px solid #a43b21;
@@ -169,6 +262,13 @@ li strong {
     .foto img {
         margin: 2px;
     }
+    .menu_items li a{
+        font-size: 16px;
+    }
+    .info p{
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1100px){
@@ -187,7 +287,24 @@ li strong {
         height: 350px;
     
     }
-
+   .menu_boton{
+    display: none;
+   }
+   .menuPrincipal{
+    flex-wrap: nowrap;
+   }
+   .menu_items{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    float: right;
+    justify-content: center;
+   }
+   .items a{
+    background-color: #F6AE0C;
+    color: #E85C0C;
+    font-weight: bold;
+   }
 }
 
 @media (min-width: 1101px) {
@@ -210,4 +327,23 @@ li strong {
     .team{
         height: 500px;
     }
+
+    .menu_boton{
+        display: none;
+       }
+       .menuPrincipal{
+        flex-wrap: nowrap;
+       }
+       .menu_items{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        float: right;
+        justify-content: center;
+       }
+       .items a{
+        background-color: #F6AE0C;
+        color: #E85C0C;
+        font-weight: bold;
+       }
 }

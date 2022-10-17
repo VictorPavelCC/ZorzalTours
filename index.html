@@ -5,120 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
     <title>Inicio | ZorzalTours</title>
+    <script src="https://kit.fontawesome.com/e7099fb92b.js" crossorigin="anonymous"></script>
 </head>
 <body class="home">
-    <header class="d-flex justify-content-center py-3 fondo">
-        <ul class="nav nav-pills menu">
-          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="./pages/Quienes somos.html" class="nav-link">Quienes Somos</a></li>
-          <li class="nav-item"><a href="./pages/Destinos.html" class="nav-link">Destinos</a></li>
-          <li class="nav-item"><a href="./pages/Preguntas frecuentes.html" class="nav-link">Preguntas frecuentes</a></li>
-          <li class="nav-item"><a href="./pages/Contacto.html" class="nav-link">Contacto</a></li>
-        </ul>
+    <header class="fondo">
+      <nav class="menuPrincipal">
+        <span class="menu_boton" id="menu_boton">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </span>
+        <img src="./img/LOGO.png" alt="LOGO" class="logo">
+        <ul class="menu_items" id="menu_items">
+          <li class="items"><a href="#">Inicio</a></li>
+          <li class="items"><a href="./pages/Quienes somos.html">Quienes Somos</a></li>
+          <li class="items"><a href="./pages/destinos.html">Destinos</a></li>
+          <li class="items"><a href="./pages/Preguntas frecuentes.html">Preguntas Frecuentes</a></li>
+          <li class="items"><a href="./pages/contacto.html">Contacto</a></li>
+        </u>
+      </nav>
     </header>
+  
+    <section>
+      <div class="container">
+        <h2 class="titulo">Explora Misiones y Cordoba con nosotros</h2>
+  
+        <ul class="packsV">
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+          <li>
+            <figure class="figure">
+              <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
+            </figure>
+            <div class="info">
+              <p>Visita las Cataratas :)</p>
+              <span>Precio: Ars $80.000</span>
+              <a href="#" class="boton">+ Info</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/CataratasIguazu1.jpg" class="d-block w-100" alt="Cataratas del Iguazu">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/Cordoba1.jpg" class="d-block w-100" alt="Cordoba">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/IguazuCascada.jpg" class="d-block w-100" alt="Cataratas del Iguazu">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <div>
-        
-    </div>
-
-    <div class="container-fluid">
-      <h2 class="titulo">Explora Misiones y Cordoba con nosotros</h2>
-
-      <ul class="packsV">
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        <li>
-          <figure class="figure">
-            <img src="./img/cataratasbote.webp" class="figure-img img-fluid rounded promo" alt="balsa con personas felices">
-          </figure>
-          <div class="info">
-            <p>Visita las Cataratas :)</p>
-            <span>Precio: Ars $80.000</span>
-            <a href="#" class="boton">+ Info</a>
-          </div>
-        </li>
-        
-        
-
-
-      </ul>
-
-
-    </div>
 
 
 
@@ -148,21 +127,21 @@
         </symbol>
     </svg>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fondo">
-        <div class="col-md-4 d-flex align-items-center">
+    <footer class="footer fondo">
+        <div class="logo_footer">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            <img src="./img/LOGO.png" alt="LOGO" class="logo">
           </a>
           <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Derechos Reservados, ZorzalTours.SA </span>
         </div>
     
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        <ul class="redes">
+          <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://facebook.com"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
         </ul>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
