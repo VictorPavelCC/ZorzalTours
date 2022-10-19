@@ -235,7 +235,7 @@ li strong {
 .boton{
     text-decoration: none;
     color: #a43b21;
-    margin: 5px 0 0 20px;
+    margin: 5px 0 10px 20px;
     padding: 4px 8px 4px 8px;
     border-radius: 18px;
     border: 1px solid #a43b21;
@@ -250,7 +250,79 @@ li strong {
 
 }
 
+/* js carrito armado */
+.shopCont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 80px 20px 80px;
+}
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.card > img{
+    width: 90%;
+    height: 250px;
+}
+.precio{
+    color: #a43b21;
+    font-weight: bold;
+    font-size: 22px;
+}
 
+.modalCont{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: #a43b21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 10;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modalCont::-webkit-scrollbar{
+    display: none;
+}
+  
+.modalHeader{
+    display: flex;
+    justify-content: space-around;
+    background-color: #a43b21;
+    color: white;
+    width: 100%;
+}
+
+.modalHeaderTitulo{
+    justify-self: start;
+}
+
+.modalButton{
+    cursor: pointer;
+}
+
+.modalCont > .carritoCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modalCont > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+/* fin */
 /* responsive */
 
 @media (max-width: 767px) {
