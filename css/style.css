@@ -42,6 +42,7 @@ nav{
     line-height: 40px;
     cursor: pointer;
 }
+
 .menu_items{
     width: 100%;
     list-style: none;
@@ -57,6 +58,7 @@ nav{
     color: white;
     font-family: 'Arvo', serif;
     font-size: 18px;
+    text-shadow: 0.05cm 0.05cm 0.05cm black
 }
 
 .items a:hover{
@@ -116,8 +118,10 @@ nav{
     text-shadow: 0.05cm 0.05cm 0.05cm black;    
 }
 
-.menu a:hover{
-    color: #F2B50C;
+.items a:hover{
+    background-color: #a43b21;
+    transition: .4s;
+    
 }
 
 
@@ -135,12 +139,6 @@ nav{
     padding: 10px 0px 0px 0px;
 }
 
-.barra_separadora{
-    width: 900px;
-    height: 10px;
-    background: #be9420;
-    margin: 0px auto;
-}
 
 .info_team {
     padding: 30px;
@@ -185,6 +183,16 @@ div.preg_frecuentes h1{
     text-align: center;
 }
 
+.preg_frecuentes{
+    font-family:'Roboto', sans-serif;
+}
+.preg_frecuentes li{
+    padding: 10px;
+}
+.preg_frecuentes li p{
+    margin-top: 7px;
+
+}
 
 
 .packsV{
@@ -235,7 +243,7 @@ li strong {
 .boton{
     text-decoration: none;
     color: #a43b21;
-    margin: 5px 0 10px 20px;
+    margin: 10px 0 10px 0;
     padding: 4px 8px 4px 8px;
     border-radius: 18px;
     border: 1px solid #a43b21;
@@ -262,10 +270,15 @@ li strong {
     max-width: 300px;
     margin: auto;
     text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 .card > img{
-    width: 90%;
+    width: 95%;
     height: 250px;
+    border-radius: 5px;
 }
 .precio{
     color: #a43b21;
@@ -287,23 +300,37 @@ li strong {
     z-index: 10;
     top: 12vh;
     scrollbar-color: none;
+    font-family:'Roboto', sans-serif;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    
 }
 .modalCont::-webkit-scrollbar{
     display: none;
+    
 }
   
 .modalHeader{
     display: flex;
     justify-content: space-around;
-    background-color: #a43b21;
+    padding: 10px;
+    margin: 10px 0 10px 0;
     color: white;
     width: 100%;
+
 }
 
 .modalHeaderTitulo{
     justify-self: start;
 }
 
+.totalVendido{
+    
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
 .modalButton{
     cursor: pointer;
 }
@@ -321,7 +348,9 @@ li strong {
     height: 120px;
     width: 120px;
 }
-
+.eliminarProd{
+    cursor: pointer;
+}
 /* fin */
 /* responsive */
 
@@ -351,6 +380,10 @@ li strong {
     .info_team {
         padding: 5px;
         margin: 10px;
+        
+    }
+    .team{
+        height: 500px;
     }
 
     .foto img {
